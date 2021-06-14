@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mx-auto my-5">
+            <div class="card-header text-center">
+                <h3>Register Yourself</h3>
+            </div>
+            <div class="card-header">
+                <form [formGroup]="reg" (ngSubmit)="sign()" novalidate>
+                    <mat-form-field class="f" appearance="legacy">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="name" type="text" placeholder="Name">
+
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="f" appearance="legacy">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" type="email" placeholder="Email">
+                        
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="f" appearance="legacy">
+                        <mat-label>Password</mat-label>
+                        <input matInput formControlName="pass" type="password" placeholder="Password">
+
+                    </mat-form-field>
+                    <br>
+
+                    <mat-form-field class="f" appearance="legacy">
+                        <mat-label>Confirm Password</mat-label> 
+                        <input matInput formControlName="pass" type="password" placeholder=" C Password">
+
+                    </mat-form-field>
+             
+                
+                    <button type="submit" mat-raised-button color="accent" [disabled]="!reg.valid" >Register</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+.f{
+    width: 100%;
+}
+.h3{
+    background: radial-gradient(#00A4CCFF, #F95700FF);
+    animation: animated 2s ease-in-out infinite alternate;
+
+}
